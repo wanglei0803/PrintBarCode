@@ -1,0 +1,5 @@
+C:\Users\Think\documents\visual studio 2010\Projects\Ysdt.EAM\Utility\bin\Debug\Natty.Utility.dll
+C:\Users\Think\documents\visual studio 2010\Projects\Ysdt.EAM\Utility\bin\Debug\Natty.Utility.pdb
+C:\Users\Think\documents\visual studio 2010\Projects\Ysdt.EAM\Utility\obj\Debug\Natty.Utility.dll
+C:\Users\Think\documents\visual studio 2010\Projects\Ysdt.EAM\Utility\obj\Debug\Natty.Utility.pdb
+C:\Users\Think\documents\visual studio 2010\Projects\Ysdt.EAM\Utility\obj\Debug\Natty.Utility.csprojResolveAssemblyReference.cache

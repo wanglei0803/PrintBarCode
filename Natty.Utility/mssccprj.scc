@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Utility.csproj]
+SCC_Aux_Path = "\\10.10.10.24\vss"
+SCC_Project_Name = "$/Mlpla.App/公用工程/Utility", DGCAAAAA

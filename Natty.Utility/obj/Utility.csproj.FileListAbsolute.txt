@@ -1,0 +1,5 @@
+D:\Project\58\NTires\Utility\bin\Debug\Utility.dll
+D:\Project\58\NTires\Utility\bin\Debug\Utility.pdb
+D:\Project\58\NTires\Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\58\NTires\Utility\obj\Debug\Utility.dll
+D:\Project\58\NTires\Utility\obj\Debug\Utility.pdb

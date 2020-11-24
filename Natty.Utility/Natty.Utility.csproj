@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BEB9823-D10B-4550-942C-5A53EB17B6B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Natty.Utility</RootNamespace>
+    <AssemblyName>Natty.Utility</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>http://localhost/Utility/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Microsoft Enterprise Library 4.0\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Microsoft Enterprise Library 4.0\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Microsoft Enterprise Library 4.0\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonUtils.cs" />
+    <Compile Include="Common\SerializationManager.cs" />
+    <Compile Include="Compression\CompressionManager.cs" />
+    <Compile Include="Compression\SevenZip\Common\CommandLineParser.cs" />
+    <Compile Include="Compression\SevenZip\Common\CRC.cs" />
+    <Compile Include="Compression\SevenZip\Common\InBuffer.cs" />
+    <Compile Include="Compression\SevenZip\Common\OutBuffer.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LzmaAlone\SevenZipHelper.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Compression\SevenZip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Compression\SevenZip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="Compression\SevenZip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="Compression\SevenZip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Compression\SevenZip\ICoder.cs" />
+    <Compile Include="Configuration\ServiceNode.cs" />
+    <Compile Include="Configuration\ServiceNodeCollection.cs" />
+    <Compile Include="Configuration\ServiceProvider.cs" />
+    <Compile Include="Configuration\ServiceProvidersSection.cs" />
+    <Compile Include="Cryptography\CryptographyManager.cs" />
+    <Compile Include="DesignByContract\DesignByContract.cs" />
+    <Compile Include="Factory\Factory.cs" />
+    <Compile Include="Factory\ServiceFactory.cs" />
+    <Compile Include="Factory\UnityFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\Emit\DynamicMethodProxyFactory.cs" />
+    <Compile Include="Reflection\Emit\EmitUtils.cs" />
+    <Compile Include="Reflection\ReflectionUtils.cs" />
+    <Compile Include="ToolBox\ArrayHelper.cs" />
+    <Compile Include="ToolBox\BindControl.cs" />
+    <Compile Include="ToolBox\BrowserInfo.cs" />
+    <Compile Include="ToolBox\CacheHelper.cs" />
+    <Compile Include="ToolBox\Character.cs" />
+    <Compile Include="ToolBox\CharHelper.cs" />
+    <Compile Include="ToolBox\CharInputCheck.cs" />
+    <Compile Include="ToolBox\Encrypt.cs" />
+    <Compile Include="ToolBox\EnumHelper.cs" />
+    <Compile Include="ToolBox\ErrLogHelper.cs" />
+    <Compile Include="ToolBox\ErrorHelper.cs" />
+    <Compile Include="ToolBox\FileHelper.cs" />
+    <Compile Include="ToolBox\Inc.cs" />
+    <Compile Include="ToolBox\IniFileHelper.cs" />
+    <Compile Include="ToolBox\JavaScript.cs" />
+    <Compile Include="ToolBox\MailHelper.cs" />
+    <Compile Include="ToolBox\Pagination.cs" />
+    <Compile Include="ToolBox\RawPrinterHelper.cs" />
+    <Compile Include="ToolBox\ReflectHelper.cs" />
+    <Compile Include="ToolBox\SerializableHelper.cs" />
+    <Compile Include="ToolBox\SingleCrypt.cs" />
+    <Compile Include="ToolBox\SortCompare.cs" />
+    <Compile Include="ToolBox\SystemEncrypt.cs" />
+    <Compile Include="ToolBox\ValidateImage.cs" />
+    <Compile Include="ToolBox\ValidateString.cs" />
+    <Compile Include="ToolBox\WebConfig.cs" />
+    <Compile Include="ToolBox\ZebraLibrary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
